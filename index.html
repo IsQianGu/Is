@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <meta name="keywords" content="clannad">
+    <meta name="keywords" content="iclannad">
+		<title>iClannad</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="linchu" class="mylink"><a href="link/index.html"><img style="width: 90px;height: 90px;" src="images/eye.png"/></a></div>
+		<div id="xialai" class="my_link">
+			<p style="margin-top: 10px; margin-left: 5px; font-family: '楷体'; font-size: 18px;">点击以访问作者的作品</p>
+		</div>
+			<div id="wrapper">
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>is千古</h1>
+							<p>欢迎访问iClannad.com</p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="#" class="fa-twitter">Twitter</a></li>
+								<li><a href="music.html" class="fa-instagram">Music</a></li>
+								<li><a href="#" class="fa-facebook">Facebook</a></li>
+							</ul>
+						</footer>
+					</section>
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; is千古</li><li>邮箱:461827834@qq.com</li>
+						</ul>
+					</footer>
+
+			</div>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+				var t1=document.getElementById('linchu');
+				var t2=document.getElementById('xialai').style;
+				t1.onmouseover=function(){
+					t2.top='33px';
+				}
+				t1.onmouseout=function(){
+					t2.top='-91px';
+				}
+			</script>
+
+	</body>
+</html>
