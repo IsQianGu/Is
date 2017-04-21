@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Is_Router</title>
+    <script src="Is_Router.js"></script>
+    <style>
+        .box{
+            margin: auto;
+            width: 30%;
+            height: 30px;
+            border:1px solid #3E6377;
+        }
+        span{
+            display: block;
+            width: 50%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+        }
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            color: #3E6377;
+            background-color: #FFFFFF;
+            cursor: pointer;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+        }
+        a:hover{
+            color: #FFFFFF;
+            background-color: #3E6377;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center">Hello This is IsRouter !</h1>
+<div class="box">
+    <span>
+        <a href="#/byone">Go Link One</a>
+    </span>
+    <span>
+        <a href="#/bytwo">Go Link Two</a>
+    </span>
+</div>
+<is-view style="margin-top: 200px"></is-view>
+</body>
+<script>
+    IsRouter.init(window).router(
+         [
+            {
+                path:"/",
+                component:"./link_index.html"
+            },
+            {
+                path:"/byone",
+                component:"./link_one.html"
+            },
+            {
+                path:"/bytwo",
+                component:"./link_two.html"
+            },
+            {
+                path:"/byone/byone",
+                component:"./link_one_one.html"
+            },
+            {
+                path:"/byone/bytwo",
+                component:"./link_one_two.html"
+            },
+            {
+                path:"/bytwo/byone",
+                component:"./link_two_one.html"
+            },
+            {
+                path:"/bytwo/bytwo",
+                component:"./link_two_two.html"
+            }
+        ]
+    )
+</script>
+</html>

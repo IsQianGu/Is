@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   function Dog(roar,name,look) {
+       this.name=name;
+       this.roarOne=roar;
+       this.look=look;
+   }
+   Dog.prototype.roar=function (v) {
+        alert(v? v:this.roarOne)
+   };
+   Dog.prototype.lookMe=function () {
+       this.roar(this.look);
+   };
+   var xiaoxian=new Dog("wow","xiaoxian","yelp");
+
+</script>
+</body>
+</html>
