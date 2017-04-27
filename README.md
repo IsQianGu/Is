@@ -1,7 +1,7 @@
 # Is
 Is千古的存储库。IsQianGu_Repository！
 
-# 目录结构
+目录结构
 │  index.html
 │
 ├─Hyperlink
